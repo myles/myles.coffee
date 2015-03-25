@@ -1,5 +1,8 @@
 .DS_Store
 /.bundle
+/vendor
+/node_modules
 /.cache
 /.sass-cache
 /build
+.aws.json
