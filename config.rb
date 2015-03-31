@@ -20,14 +20,23 @@ configure :build do
 end
 
 helpers do
-  def nav_link(link_text, page_url, options = {})
-    options[:class] ||= ""
-    if current_page.url.length > 1
-      current_url = current_page.url.chop
+  # Format Title
+  def format_title
+    separator = " | "
+    if @page_title
+      site_title + separator + @page_title
     else
-      current_url = current_page.url
+      site_title
     end
-    options[:class] << " active" if page_url == current_url
-    link_to(link_text, page_url, options)
   end
 end
+
+###
+# Site Settings
+###
+
+set :site_title, 'Myles.Coffee'
+set :site_url, 'http://myles.coffee'
+set :site_baseurl, ''
+set :site_description, 'Myles loves coffee.'
+set :site_author, 'Myles Braithwaite'

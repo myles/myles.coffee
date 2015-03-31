@@ -1,19 +1,66 @@
+$modular-scale-ratio: $golden;
+$modular-scale-base: 1.2em;
+
 body {
-  background-color: $light-gray;
-  color: $medium-gray;
+	background-color: $light-gray;
+	color: $medium-gray;
 }
 
-.delete-me {
-  @include align-items(center);
-  @include display(flex);
-  @include justify-content(center);
-  height: 100vh;
-
-  .container {
-    text-align: center;
-
-    h1 {
-      font-weight: 200;
-    }
-  }
+.main {
+	@include align-items(center);
+	@include display(flex);
+	@include justify-content(center);
+	height: 100vh;
+	
+	.container {
+		text-align: center;
+		
+		h1 {
+			font-size: modular-scale(2);
+		}
+		
+		h2 {
+			font-size: modular-scale(1);
+		}
+		
+		h1, h2 {
+			padding: 0;
+			margin: 0;
+		}
+		
+		nav {
+			@include margin(1em null null null);
+			
+			li {
+				@include margin(null .5em null .5em);
+				
+				display: inline;
+				font-size: modular-scale(0);
+				
+				.iconic {
+					@include size(modular-scale(1));
+					
+					* {
+						fill: $medium-gray;
+					}
+					
+					&.key:hover * { @include iconic-color($color-9); }
+					
+					&.facebook:hover * { @include iconic-color(#3c569a); }
+					
+					&.instagram:hover * { @include iconic-color(#211f20); }
+					
+					&.google-plus:hover * { @include iconic-color(#df4a32); }
+					
+					&.github:hover * { @include iconic-color(#333); }
+					
+					&.twitter:hover * { @include iconic-color(#00b4f3); }
+					
+					&.tumblr:hover * { @include iconic-color(#34455e); }
+					
+					&.email:hover * { @include iconic-color($color-1); }
+				}
+			}
+		}
+	}
 }
