@@ -1,4 +1,3 @@
-#= require vendor/jquery.fittext
 #= require vendor/iconic.min
 #= require_tree .
 
@@ -38,5 +37,10 @@ class GoogleAnalytics
 $ ->
   GoogleAnalytics.init 'UA-1642439-35'
   
-  $("nav li a").on "click", ->
+  $("nav li a").click, ->
+    console.log('track /' + self.attr('id') + '/')
     GoogleAnalytics.trackPageView '/' + self.attr('id') + '/'
+  
+  $(".logo").hover, ->
+    console.log('track /logo/')
+    GoogleAnalytics.trackPageView '/logo/'
