@@ -23,9 +23,6 @@ body {
 		text-align: center;
     
     .logo {
-      @include margin(0);
-      @include padding(0);
-      
       .iconic {
         * {
           fill: $medium-gray;
@@ -38,7 +35,6 @@ body {
     }
     
     header {
-      @include margin(1em);
       @include padding(1.5em);
       
       background-color: rgb(36, 165, 213);
