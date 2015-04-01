@@ -4,11 +4,12 @@ $media-desktop: "only screen and (min-width: 450px)";
 $modular-scale-ratio: $golden;
 $modular-scale-base: 1.2em;
 
-html {}
-
-body {
-	color: $dark-gray;
-	background-color: #FFFFFF;
+html {
+  background: image-url('background.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .main {
@@ -25,7 +26,7 @@ body {
     .logo {
       .iconic {
         * {
-          fill: $medium-gray;
+          fill: $dark-gray;
         }
       
         &:hover * {
@@ -77,7 +78,7 @@ body {
 					@include size(modular-scale(1));
 					
 					* {
-						fill: $medium-gray;
+						fill: $dark-gray;
 					}
 					
 					&.key:hover * { @include iconic-color($color-9); }
