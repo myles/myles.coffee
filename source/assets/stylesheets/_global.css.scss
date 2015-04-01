@@ -21,20 +21,28 @@ body {
 	
 	.container {
 		text-align: center;
+    
+    header {
+      .iconic {
+        * {
+          fill: $medium-gray;
+        }
+      }
+      
+  		h1 {
+  			font-size: modular-scale(2);
+  		}
 		
-		h1 {
-			font-size: modular-scale(2);
-		}
+  		h2 {
+  			font-size: modular-scale(1);
+  		}
 		
-		h2 {
-			font-size: modular-scale(1);
-		}
-		
-		h1, h2 {
-			padding: 0;
-			margin: 0;
-		}
-		
+  		h1, h2 {
+  			padding: 0;
+  			margin: 0;
+  		}
+    }
+	  
 		nav {
 			@include margin(1em null null null);
 			
