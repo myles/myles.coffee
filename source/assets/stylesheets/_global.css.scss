@@ -22,22 +22,34 @@ body {
 	.container {
 		text-align: center;
     
-    header {
+    .logo {
+      @include margin(0);
+      @include padding(0);
+      
       .iconic {
         * {
           fill: $medium-gray;
         }
-        
+      
         &:hover * {
           @include iconic-color(#00592D);
         }
       }
+    }
+    
+    header {
+      @include margin(1em);
+      @include padding(1.5em);
+      
+      background-color: rgb(36, 165, 213);
       
   		h1 {
+        color: rgb(206, 230, 68);
   			font-size: modular-scale(2);
   		}
 		
   		h2 {
+        color: rgb(243, 87, 120);
   			font-size: modular-scale(1);
   		}
 		
