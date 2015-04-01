@@ -27,6 +27,10 @@ body {
         * {
           fill: $medium-gray;
         }
+        
+        &:hover * {
+          @include iconic-color(#00592D);
+        }
       }
       
   		h1 {
