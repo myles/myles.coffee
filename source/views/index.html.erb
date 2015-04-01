@@ -44,7 +44,7 @@ title: Myles.Coffee
 	<ul>
 		<% current_page.data.links.each do |l| %>
 		<li>
-			<a href="<%= l.url %>" title="<%= l.title %>">
+			<a href="<%= l.url %>" title="<%= l.title %>" id="<%= l.slug %>">
 				<img class="iconic <%= l.slug %>" data-src="<%= image_path "#{l.slug}.svg" %>" alt="<%= l.description %>">
 			</a>
 		</li>
