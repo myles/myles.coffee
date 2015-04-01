@@ -1,16 +1,23 @@
+$media-phone: "only screen and (max-width: 450px)";
+$media-desktop: "only screen and (min-width: 450px)";
+
 $modular-scale-ratio: $golden;
 $modular-scale-base: 1.2em;
 
+html {}
+
 body {
-	background-color: $light-gray;
-	color: $medium-gray;
+	color: $dark-gray;
+	background-color: #FFFFFF;
 }
 
 .main {
-	@include align-items(center);
-	@include display(flex);
-	@include justify-content(center);
-	height: 100vh;
+	@media #{$media-desktop} {
+		@include align-items(center);
+		@include display(flex);
+		@include justify-content(center);
+		height: 100vh;
+	}
 	
 	.container {
 		text-align: center;
@@ -36,6 +43,12 @@ body {
 				
 				display: inline;
 				font-size: modular-scale(0);
+				
+				@media #{$media-phone} {
+					.tumblr, .key {
+						display: none;
+					}
+				}
 				
 				.iconic {
 					@include size(modular-scale(1));

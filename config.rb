@@ -17,18 +17,12 @@ end
 configure :build do
   # Relative assets needed to deploy to GitHub Pages
   activate :relative_assets
-end
-
-helpers do
-  # Format Title
-  def format_title
-    separator = " | "
-    if @page_title
-      site_title + separator + @page_title
-    else
-      site_title
-    end
-  end
+  
+  activate :minify_css
+  activate :minify_html
+  activate :minify_javascript
+  
+  activate :gzip
 end
 
 ###
