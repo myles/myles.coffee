@@ -34,13 +34,18 @@ class GoogleAnalytics
       if argument? then trackedEvent.push argument else break
     window._gaq.push trackedEvent
 
-$ ->
+jQuery ->
   GoogleAnalytics.init 'UA-1642439-35'
+
+ready = ->
   
-  $("nav li a").click, ->
-    console.log('track /' + self.attr('id') + '/')
+  $("nav li a").click ->
+    alert 'track /' + self.attr('id') + '/'
     GoogleAnalytics.trackPageView '/' + self.attr('id') + '/'
   
-  $(".logo").hover, ->
-    console.log('track /logo/')
+  $(".logo img").hover ->
+    alert 'track /logo/'
     GoogleAnalytics.trackPageView '/logo/'
+
+$(document).ready(ready)
+$(document).on('page:load', ready)
