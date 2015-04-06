@@ -39,12 +39,10 @@ jQuery ->
 
 ready = ->
   
-  $("nav li a").click ->
-    alert 'track /' + self.attr('id') + '/'
-    GoogleAnalytics.trackPageView '/' + self.attr('id') + '/'
+  $("nav li a").mousedown ->
+    GoogleAnalytics.trackPageView "/#{ this.id }/"
   
-  $(".logo img").hover ->
-    alert 'track /logo/'
+  $(".logo").mouseover ->
     GoogleAnalytics.trackPageView '/logo/'
 
 $(document).ready(ready)
