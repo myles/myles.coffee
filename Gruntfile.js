@@ -13,6 +13,21 @@ module.exports = function(grunt) {
 				src: "**"
 			}
 		},
+		rsync: {
+			options: {
+				args: ["--verbose"],
+				recursive: true
+			},
+			prod: {
+				options: {
+					src: "./build/",
+					dest: "/srv/www/coffee_myles_www/html",
+					host: "myles@panda.mylesbraithwaite.com",
+					port: "2222",
+					delete: true,
+				}
+			}
+		},
 		exec: {
 			encrypt: {
 				cmd: "gpg --encrypt --armor -r <%= config.gpg_key => --batch --yes --trust-model always -o .aws.json.gpg .aws.json"
