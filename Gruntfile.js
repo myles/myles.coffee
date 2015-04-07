@@ -57,9 +57,10 @@ module.exports = function(grunt) {
 	
 	grunt.loadNpmTasks('grunt-aws');
 	grunt.loadNpmTasks('grunt-exec');
+  grunt.loadNpmTasks('grunt-rsync');
 	grunt.loadNpmTasks('grunt-middleman');
 	
 	grunt.registerTask('default', ['middleman:build']);
 	grunt.registerTask('run', ['middleman:server']);
-	grunt.registerTask('deploy', ['default', 's3']);
+	grunt.registerTask('deploy', ['default', 's3', 'rsync:prod']);
 };
