@@ -36,14 +36,46 @@ class GoogleAnalytics
 
 jQuery ->
   GoogleAnalytics.init 'UA-1642439-35'
+  return
 
 ready = ->
   
+  # $(window).on 'keypress', (e) ->
+  #   if e.which = 120
+  #     $("#modal").prop('checked', true).change()
+  #     return
+  #   if e.which = 99
+  #     $("#modal").prop('checked', false).change()
+  #     return
+  
+  # Track one someone clicks on on of the social network icons.
   $("nav li a").mousedown ->
     GoogleAnalytics.trackPageView "/#{ this.id }/"
   
+  # Track one someone hovers over the coffee cup logo.
   $(".logo").mouseover ->
     GoogleAnalytics.trackPageView '/logo/'
+    return
+  
+  # When the .modal-state checkbox changes open/close the modal.
+  $("#modal").on 'change', ->
+    if $(this).is(':checked')
+      $('body').addClass 'modal-open'
+      GoogleAnalytics.trackPageView "/email-modal/open/"
+    else
+      $('body').removeClass 'modal-open'
+      GoogleAnalytics.trackPageView "/email-modal/close/"
+    return
+  
+  $('.modal-fade-screen, .modal-close').on 'click', ->
+    $('.modal-state:checked').prop('checked', false).change()
+    return
+  
+  $('.modal-inner').on 'click', (e) ->
+    e.stopPropagation()
+    return
+  
+  return
 
 $(document).ready(ready)
 $(document).on('page:load', ready)

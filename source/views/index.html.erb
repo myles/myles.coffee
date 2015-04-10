@@ -42,3 +42,28 @@ title: Myles.Coffee
 		<% end %>
 	</ul>
 </nav>
+
+<div class="modal">
+	<input class="modal-state" id="modal" type="checkbox">
+	<div class="modal-fade-screen">
+		<div class="modal-inner">
+			<div class="modal-close" for="modal"></div>
+			<h1>Contact Me</h1>
+			<p class="modal-intro"></p>
+			<div class="modal-content">
+				<form action="http://damp-stream-3548.herokuapp.com/zqxaogap" method="POST">
+					<p>
+						<label for="id_email">Email</label>
+						<input type="email" name="email" placeholder="user@example.com" id="id_email">
+					</p>
+					<p>
+						<label for="id_message">Message</label>
+						<textarea name="message" placeholder="I love coffee too." id="id_message"></textarea>
+					</p>
+					<input type="text" name="_gotcha" style="display:none">
+					<input type="submit" value="Send">
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
