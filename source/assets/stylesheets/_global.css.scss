@@ -21,6 +21,10 @@ html {
 		@include justify-content(center);
 		height: 100vh;
 	}
+  
+  @media #{$media-phone} {
+    @include margin(1em null null null);
+  }
 	
 	.container {
 		text-align: center;
@@ -45,6 +49,10 @@ html {
   		h1 {
         color: rgb(206, 230, 68);
   			font-size: modular-scale(2);
+        
+        @media #{$media-phone} {
+          font-size: modular-scale(1);
+        }
   		}
 		
   		h2 {
@@ -60,21 +68,15 @@ html {
         font-family: 'source-sans-pro', $helvetica;
   		}
     }
-	  
+    
 		nav {
-			@include margin(1em null null null);
-			
+      @include margin(1em null null null);
+      
 			li {
-				@include margin(null .5em null .5em);
-				
+				@include margin(null 10px null 10px);
+        
 				display: inline;
 				font-size: modular-scale(0);
-				
-				@media #{$media-phone} {
-					.tumblr, .key {
-						display: none;
-					}
-				}
 				
 				.iconic {
 					@include size(modular-scale(1));

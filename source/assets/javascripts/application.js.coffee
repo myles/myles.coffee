@@ -40,14 +40,6 @@ jQuery ->
 
 ready = ->
   
-  # $(window).on 'keypress', (e) ->
-  #   if e.which = 120
-  #     $("#modal").prop('checked', true).change()
-  #     return
-  #   if e.which = 99
-  #     $("#modal").prop('checked', false).change()
-  #     return
-  
   # Track one someone clicks on on of the social network icons.
   $("nav li a").mousedown ->
     GoogleAnalytics.trackPageView "/#{ this.id }/"
