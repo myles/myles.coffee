@@ -1,9 +1,11 @@
-source "http://rubygems.org"
+source 'http://rubygems.org'
 
-gem "middleman"
-gem "middleman-livereload"
-gem "middleman-minify-html"
+gem 'middleman'
+gem 'middleman-livereload'
+gem 'middleman-minify-html'
 
 gem 'bourbon'
 gem 'neat'
 
+gem 'puma'
+gem 'rack-contrib'

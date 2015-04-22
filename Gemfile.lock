@@ -97,7 +97,11 @@ GEM
       tilt (~> 1.4.1)
     padrino-support (0.12.5)
       activesupport (>= 3.1)
+    puma (2.11.2)
+      rack (>= 1.1, < 2.0)
     rack (1.6.0)
+    rack-contrib (1.2.0)
+      rack (>= 0.9.1)
     rack-livereload (0.3.15)
       rack
     rack-test (0.6.3)
@@ -137,3 +141,5 @@ DEPENDENCIES
   middleman-livereload
   middleman-minify-html
   neat
+  puma
+  rack-contrib

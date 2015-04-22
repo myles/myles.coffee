@@ -16,7 +16,7 @@ end
 
 configure :build do
   # Relative assets needed to deploy to GitHub Pages
-  activate :relative_assets
+  #activate :relative_assets
   
   activate :asset_hash
   
