@@ -1,5 +1,6 @@
 #= require vendor/jquery-2.1.1.min
 #= require vendor/iconic.min
+#= require vendor/egg
 
 class GoogleAnalytics
   @init: (webPropertyId) ->
@@ -39,7 +40,6 @@ jQuery ->
   return
 
 ready = ->
-  
   # Track one someone clicks on on of the social network icons.
   $("nav li a").mousedown ->
     GoogleAnalytics.trackPageView "/#{ this.id }/"
@@ -48,6 +48,17 @@ ready = ->
   $(".logo").mouseover ->
     GoogleAnalytics.trackPageView '/logo/'
     return
+  
+  egg = new Egg
+  
+  egg.AddCode("up,up,down,down,left,right,left,right,b,a", (->
+    return
+  ), 'konami-code').AddHook(->
+    console.log 'Hook called for: ' + @activeEgg.keys
+    console.log @activeEgg.metadata
+    $('.modal-state').prop('checked', true).change()
+    return
+  ).Listen()
   
   # When the .modal-state checkbox changes open/close the modal.
   $("#modal").on 'change', ->
