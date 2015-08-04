@@ -30,10 +30,10 @@ module.exports = function(grunt) {
 		},
 		exec: {
 			encrypt: {
-				cmd: "gpg --encrypt --armor -r <%= config.gpg_key => --batch --yes --trust-model always -o .aws.json.gpg .aws.json"
+				cmd: "gpg --encrypt --armor -r <%= config.gpg_key %> --batch --yes --trust-model always -o .aws.json.gpg .aws.json"
 			},
 			decrypt: {
-				cmd: "gpg --decrypt --armor -r <%= config.gpg_key => --batch --yes --trust-model always -o .aws.json .aws.json.gpg"
+				cmd: "gpg --decrypt --armor -r <%= config.gpg_key %> --batch --yes --trust-model always -o .aws.json .aws.json.gpg"
 			}
 		},
 		middleman: {
