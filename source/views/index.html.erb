@@ -36,8 +36,8 @@ old_links:
 	<ul>
 		<% current_page.data.links.each do |l| %>
 		<li>
-			<a href="<%= l.url %>" title="<%= l.title %>" id="<%= l.slug %>">
-				<img class="iconic <%= l.slug %>" data-src="<%= image_path "#{l.slug}.svg" %>" alt="<%= l.description %>">
+			<a href="<%= l.url %>" title="<%= l.description %>" id="<%= l.slug %>">
+				<img class="iconic <%= l.slug %>" data-src="<%= image_path "#{l.slug}.svg" %>" alt="<%= l.title %>">
 			</a>
 		</li>
 		<% end %>
