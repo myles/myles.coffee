@@ -30,6 +30,8 @@ html {
 		text-align: center;
     
     .logo {
+			@include pulse-grow;
+			
       .iconic {
         * {
           fill: $dark-gray;
@@ -76,6 +78,8 @@ html {
         
 				display: inline;
 				font-size: modular-scale(0);
+				
+				@include pulse-grow;
 				
 				.iconic {
 					@include size(modular-scale(1));
