@@ -1,14 +1,15 @@
-@import "vendor/normalize";
+@import 'variables';
 
-$includeClasses: false;
 
-@import "bourbon";
-@import "base/base";
-@import "hover/hover";
-@import "neat";
+@import 'vendor/normalize';
 
-@import "iconic";
+@import 'bourbon';
+@import 'base/base';
+@import 'hover/hover';
+@import 'neat';
 
-@import "global";
+@import 'iconic';
 
-@import "modal";
+@import 'global';
+
+@import 'modal';

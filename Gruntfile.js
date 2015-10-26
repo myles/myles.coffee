@@ -60,6 +60,9 @@ module.exports = function(grunt) {
             options: {
                 bundleExec: true
             }
+        },
+        coffeelint: {
+            app: ['source/assets/javascripts/*.coffee']
         }
     });
     
@@ -68,9 +71,10 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-rsync');
     grunt.loadNpmTasks('grunt-middleman');
     grunt.loadNpmTasks('grunt-scss-lint');
+    grunt.loadNpmTasks('grunt-coffeelint');
     
     grunt.registerTask('default', ['middleman:build']);
     grunt.registerTask('run', ['middleman:server']);
     grunt.registerTask('deploy', ['default', 's3', 'rsync:prod']);
-    grunt.registerTask('test', ['scsslint']);
+    grunt.registerTask('test', ['scsslint', 'coffeelint']);
 };

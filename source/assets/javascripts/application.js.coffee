@@ -29,7 +29,8 @@ class GoogleAnalytics
   @trackPageView: (url) ->
     window._gaq.push ['_trackPageview', url]
 
-  @trackEvent: (category, action, label = null, value = null, nonInteraction = null) ->
+  @trackEvent: (category, action,
+  label = null, value = null, nonInteraction = null) ->
     trackedEvent = ['_trackEvent', category, action]
     for argument in [label, value, nonInteraction]
       if argument? then trackedEvent.push argument else break
