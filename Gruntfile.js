@@ -1,6 +1,6 @@
 module.exports = function(grunt) {
     grunt.initConfig({
-        aws: grunt.file.readJSON('.aws.json'),
+        aws: grunt.file.exists('.aws.json') ? grunt.file.readJSON('.aws.json'): {},
         
         s3: {
             options: {
