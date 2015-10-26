@@ -52,6 +52,14 @@ module.exports = function(grunt) {
                     environment: 'production'
                 }
             }
+        },
+        scsslint: {
+            allFiles: [
+                './source/assets/stylesheets/*.scss'
+            ],
+            options: {
+                bundleExec: true
+            }
         }
     });
     
@@ -59,8 +67,10 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-exec');
     grunt.loadNpmTasks('grunt-rsync');
     grunt.loadNpmTasks('grunt-middleman');
+    grunt.loadNpmTasks('grunt-scss-lint');
     
     grunt.registerTask('default', ['middleman:build']);
     grunt.registerTask('run', ['middleman:server']);
     grunt.registerTask('deploy', ['default', 's3', 'rsync:prod']);
+    grunt.registerTask('test', ['scsslint']);
 };

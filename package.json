@@ -1,11 +1,15 @@
 {
   "name": "coffee_myles_www",
   "version": "1.0.0",
+  "scripts": {
+    "test": "grunt test"
+  },
   "devDependencies": {
     "grunt-aws": "^0.4.0",
     "grunt-exec": "^0.4.6",
     "grunt-favicons": "^0.6.4",
     "grunt-middleman": "^0.1.2",
-    "grunt-rsync": "^0.6.2"
+    "grunt-rsync": "^0.6.2",
+    "grunt-scss-lint": "^0.3.8"
   }
 }
