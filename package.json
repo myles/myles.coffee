@@ -6,11 +6,11 @@
   },
   "devDependencies": {
     "coffeelint": "^1.13.0",
-    "grunt-aws": "^0.4.0",
+    "grunt-aws": "^0.6.1",
     "grunt-coffeelint": "0.0.13",
     "grunt-exec": "^0.4.6",
-    "grunt-favicons": "^0.6.4",
-    "grunt-middleman": "^0.1.2",
+    "grunt-favicons": "^0.7.0",
+    "grunt-middleman": "^0.2.0",
     "grunt-rsync": "^0.6.2",
     "grunt-scss-lint": "^0.3.8"
   }
