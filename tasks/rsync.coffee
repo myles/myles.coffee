@@ -6,9 +6,9 @@ module.exports = (grunt) ->
     prod:
       options:
         src: './build/'
-        dest: '/srv/www/coffee_myles_www/html'
-        host: 'myles@panda.mylesbraithwaite.com'
-        port: 2222
+        dest: '/srv/www/myles.coffee/www/html'
+        host: 'bear.mylesbraithwaite.com'
+        port: 22
         delete: true
   
   grunt.config.set 'rsync', config
