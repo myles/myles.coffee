@@ -1,0 +1,5 @@
+url: https://myles.coffee
+baseurl: /
+
+source: ./source
+destination: ./build
