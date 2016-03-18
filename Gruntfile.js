@@ -6,7 +6,11 @@ module.exports = function (grunt) {
         config: grunt.file.readYAML('config.yml')
     });
 
+    grunt.loadNpmTasks('grunt-sass');
     grunt.loadNpmTasks('grunt-assemble');
+    grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-contrib-connect');
 
     grunt.task.loadTasks('./tasks/');
 };

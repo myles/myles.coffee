@@ -1,0 +1,13 @@
+{
+  "name": "myles.coffee-www",
+  "description": "Myles Braithwaite loves his coffee.",
+  "authors": [
+    "Myles Braithwaite <me@mylesbraithwaite.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/myles/myles.coffee",
+  "moduleType": [],
+  "devDependencies": {
+    "old-fashioned": "git@github.com:myles/old-fashioned.git"
+  }
+}

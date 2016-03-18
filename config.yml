@@ -1,5 +1,16 @@
+site_title: Myles.Coffee
+site_description: Myles Braithwaite loves coffee.
+site_keywords:
+  - Coffee
+  - Myles Braithwaite
+  - Myles Alden Braithwaite
+  - Myles
+  - Braithwaite
+
 url: https://myles.coffee
 baseurl: /
 
 source: ./source
 destination: ./build
+
+google-analytics: 'UA-1642439-35'

@@ -1,0 +1,27 @@
+.page-index {
+  @include display(flex);
+  @include align-items(center);
+  @include justify-content(center);
+  
+  height: 100vh;
+  text-align: center;
+  
+  .main {
+    flex: none;
+    max-width: 50%;
+  }
+  
+  h2 {
+    line-height: 2em;
+    
+    .heart {
+      height: 2rem;
+      width: 2rem;
+      vertical-align: middle;
+      
+      * {
+        fill: #da3a35;
+      }
+    }
+  }
+}

@@ -26,7 +26,7 @@ module.exports = function (grunt) {
             partials: [
                 '<%= config.source %>/templates/partials/*.hbs'
             ],
-            layout: 'default.hbs',
+            layout: 'base.hbs',
             permalinks: {
                 structure: ':basename/index.html'
             },
