@@ -5,7 +5,10 @@ module.exports = function (grunt) {
         'assemble:develop',
         'uglify:develop',
         'sass:develop',
+        'copy:assets',
         'connect',
         'watch'
     ]);
+
+    grunt.registerTask('default', ['develop']);
 };

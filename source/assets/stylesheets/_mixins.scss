@@ -1,0 +1,7 @@
+@mixin hide-text() {
+    font: 0/0 a;
+    color: transparent;
+    text-shadow: nonw;
+    background-color: transparent;
+    border: 0;
+}

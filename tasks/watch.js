@@ -20,7 +20,8 @@ module.exports = function (grunt) {
         html: {
             tasks: 'assemble:develop',
             files: [
-                '<%= config.source %>/**/*.hbs'
+                '<%= config.source %>/**/*.hbs',
+                '<%= config.source %>/**/*.yml'
             ]
         }
     };

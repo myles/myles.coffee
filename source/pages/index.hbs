@@ -1,6 +1,41 @@
 <div class="main">
-    <div class="jumbotron">
-        <h1>Myles Braithwaite</h1>
-        <h2>I {{> heart}} Coffee</h2>
+    <div class="main-wrapper">
+        <div class="logo">
+            {{> coffee}}
+        </div>
+        
+        <div class="jumbotron">
+            <h1>Myles Braithwaite</h1>
+            <h2>I {{> heart}} Coffee</h2>
+        </div>
+        
+        <hr/>
+        
+        <div class="social">
+            <ul>
+            {{#each index.social}}
+                <li class="social-{{slug}}">
+                    <a href="{{url}}" title="{{description}}"{{#if rel}} rel="{{rel}}"{{/if}}>
+                        {{> (lookup . 'slug') }}
+                        {{title}}
+                    </a>
+                </li>
+            {{/each}}
+            </ul>
+        </div>
+        
+        <hr/>
+        
+        <div class="elsewhere">
+            <ul>
+            {{#each index.elsewhere}}
+                <li class="elsewhere-{{slug}}">
+                    <a href="{{url}}" title="{{description}}"{{#if rel}} rel="{{rel}}"{{/if}}>
+                        {{title}}
+                    </a>
+                </li>
+            {{/each}}
+            </ul>
+        </div>
     </div>
 </div>

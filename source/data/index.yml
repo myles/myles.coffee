@@ -1,0 +1,58 @@
+social:
+  - title: Email
+    slug: email
+    url: mailto:me@myles.coffee
+    description: You should email me.
+    rel: me
+  - title: Twitter
+    slug: twitter
+    url: https://twitter.com/mylesb
+    description: Follow me on Twitter.
+    rel: me
+  - title: GitHub
+    slug: github
+    url: https://github.com/myles
+    description: Follow me on GitHub.
+    rel: me
+  - title: Instagram
+    slug: instagram
+    url: https://www.instagram.com/myles
+    description: Follow me on Instgram.
+    rel: me
+  - title: Facebook
+    slug: facebook
+    url: https://facebook.com/mylesbraithwaite
+    description: Like me on Facebook
+    rel: me
+
+elsewhere:
+  - slug: myles-blog
+    title: Myles' Blog
+    url: http://mylesbraithwaite.com/
+    rel: me
+    description: 'Where I write about technology, programming, and liberal arts.'
+  - slug: myles-lab
+    title: Myles' Lab
+    url: http://mylesbraithwaite.org/
+    rel: me
+    description: A place for web experiments and programming notes.
+  - slug: myles-life
+    title: Myles' Life
+    url: http://www.myles.life/
+    rel: me
+    description: Some random posts from my life.
+  - slug: myles-photo
+    title: Myles.Photo
+    url: http://myles.photo/
+    rel: me
+    disabled: true
+    description: Some of my photography.
+  - slug: myles-red
+    title: Myles RED
+    url: http://myles.red/
+    rel: me
+    description: Sometimes I make mixtapes for the Internet.
+  - slug: the-worst
+    title: You are the Worst Today
+    url: http://youaretheworst.today/
+    rel: me
