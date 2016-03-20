@@ -10,6 +10,67 @@
 .page-index {
   @include outer-container;
   
+  height: 100vh;
+  
+  .main {
+    @include background(radial-gradient(lighten($primary-color, 10%), $primary-color));
+    @include span-columns(12);
+  }
+  
+  .main-wrapper {
+    @include margin(1rem);
+  }
+  
+  .logo {
+    text-align: center;
+
+    svg {
+      @include size(10rem);
+    }
+  }
+  
+  .jumbotron {
+    color: $white;
+    text-align: center;
+  }
+
+  h1,
+  h2 {
+    font-weight: 400;
+  }
+
+  h1 {
+    margin-bottom: 1rem;
+  }
+
+  h2 {
+    svg {
+      @include size($headings-line-height/1.5 $headings-line-height/1.5);
+      vertical-align: middle;
+    }
+  }
+  
+  hr {
+    border: 1px solid $primary-color;
+  }
+  
+  .social,
+  .elsewhere {
+    ul {
+      @extend %list-inline;
+      @include margin(0 2rem);
+      text-align: center;
+    }
+
+    a {
+      @include hide-text;
+
+      svg {
+        @include size(2rem);
+      }
+    }
+  }
+  
   @include media($desktop) {
     .main {
       @include span-columns(5);
@@ -17,63 +78,11 @@
       @include display(flex);
       @include align-items(center);
       
-      @include background(radial-gradient(lighten($primary-color, 10%), $primary-color));
-
       height: 100vh;
     }
 
     .main-wrapper {
       @include margin(0 auto);
-    }
-
-    .logo {
-      text-align: center;
-
-      svg {
-        @include size(10rem);
-      }
-    }
-
-    .jumbotron {
-      color: $white;
-      text-align: center;
-    }
-
-    h1,
-    h2 {
-      font-weight: 400;
-    }
-
-    h1 {
-      margin-bottom: 1rem;
-    }
-
-    h2 {
-      svg {
-        @include size($headings-line-height/1.5 $headings-line-height/1.5);
-        vertical-align: middle;
-      }
-    }
-
-    hr {
-      border: 1px solid $primary-color;
-    }
-
-    .social,
-    .elsewhere {
-      ul {
-        @extend %list-inline;
-        @include margin(0 2rem);
-        text-align: center;
-      }
-
-      a {
-        @include hide-text;
-
-        svg {
-          @include size(2rem);
-        }
-      }
     }
   }
 }
