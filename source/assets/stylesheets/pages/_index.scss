@@ -9,18 +9,18 @@
 
 .page-index {
   @include outer-container;
-  
+
   height: 100vh;
-  
+
   .main {
     @include background(radial-gradient(lighten($primary-color, 10%), $primary-color));
     @include span-columns(12);
   }
-  
+
   .main-wrapper {
     @include margin(1rem);
   }
-  
+
   .logo {
     text-align: center;
 
@@ -28,7 +28,7 @@
       @include size(10rem);
     }
   }
-  
+
   .jumbotron {
     color: $white;
     text-align: center;
@@ -49,11 +49,11 @@
       vertical-align: middle;
     }
   }
-  
+
   hr {
     border: 1px solid $primary-color;
   }
-  
+
   .social,
   .elsewhere {
     ul {
@@ -64,10 +64,10 @@
 
     a {
       @include hide-text;
+    }
 
-      svg {
-        @include size(2rem);
-      }
+    svg {
+      @include size(2rem);
     }
   }
   
