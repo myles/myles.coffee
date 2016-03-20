@@ -1,5 +1,7 @@
 # myles.coffee
 
+[![Build Status](https://travis-ci.org/myles/myles.coffee.svg?branch=master)](https://travis-ci.org/myles/myles.coffee)
+
 The source code for one of [my personal websites](https://myles.coffee "Myles.Coffee").
 
 ## Development
@@ -38,4 +40,3 @@ $ grunt test
 ```
 
 ## Deploy
-
