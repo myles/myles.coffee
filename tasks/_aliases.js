@@ -10,5 +10,9 @@ module.exports = function (grunt) {
         'watch'
     ]);
 
+    grunt.registerTask('test', [
+        'sasslint'
+    ]);
+
     grunt.registerTask('default', ['develop']);
 };
