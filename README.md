@@ -1,6 +1,6 @@
 # myles.coffee
 
-The source code for one of my personal websites.
+The source code for one of [my personal websites](https://myles.coffee "Myles.Coffee").
 
 ## Development
 
