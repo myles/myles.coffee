@@ -2,6 +2,9 @@
   "name": "myles.coffee-www",
   "version": "2.0.0",
   "description": "Myles Braithwaite loves his coffee.",
+  "scripts": {
+    "test": "grunt test"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/myles/myles.coffee.git"
