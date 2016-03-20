@@ -1,0 +1,95 @@
+.svg-icon {
+  * {
+    fill: $white;
+  }
+
+  &:hover {
+    * {
+      fill: $black;
+    }
+  }
+}
+
+.svg-icon-heart {
+  * {
+    fill: $heart-color;
+  }
+  
+  &:hover {
+    * {
+      fill: $heart-color;
+    }
+  }
+}
+
+.svg-icon-coffee {
+  * {
+    fill: $white;
+  }
+
+  &:hover {
+    * {
+      fill: $starbucks-color;
+    }
+  }
+}
+
+.svg-icon-email {
+  * {
+    fill: $white;
+  }
+}
+
+.svg-icon-twitter {
+  * {
+    fill: $white;
+  }
+
+  &:hover {
+    * {
+      fill: $twitter-color;
+    }
+  }
+}
+
+.svg-icon-facebook {
+  * {
+    fill: $white;
+  }
+
+  &:hover {
+    * {
+      fill: $facebook-color;
+    }
+  }
+}
+
+.svg-icon-google-plus {
+  * {
+    fill: $white;
+  }
+
+  &:hover {
+    * {
+      fill: $google-plus-color;
+    }
+  }
+}
+
+.svg-icon-instagram {
+  * {
+    fill: $white;
+  }
+
+  &:hover {
+    * {
+      fill: $instagram-color;
+    }
+  }
+}
+
+.svg-icon-github {
+  * {
+    fill: $white;
+  }
+}

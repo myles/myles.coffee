@@ -1,8 +1,9 @@
 .body-index {
   @include retina-image('../images/background', cover, 'jpg');
+  
+  background-attachment: fixed;
   background-color: $primary-color;
   background-position: center center;
-  background-attachment: fixed;
   background-repeat: no-repeat;
 }
 
@@ -12,55 +13,52 @@
   @include media($desktop) {
     .main {
       @include span-columns(5);
-      @include background(radial-gradient(lighten($primary-color, 10%), $primary-color));
-      
-      height: 100vh;
       
       @include display(flex);
       @include align-items(center);
+      
+      @include background(radial-gradient(lighten($primary-color, 10%), $primary-color));
+
+      height: 100vh;
     }
-    
+
     .main-wrapper {
       @include margin(0 auto);
     }
-    
+
     .logo {
       text-align: center;
-      
-      svg * {
-        fill: $white;
+
+      svg {
+        @include size(10rem);
       }
     }
-    
+
     .jumbotron {
-      text-align: center;
       color: $white;
+      text-align: center;
     }
-    
-    h1, h2 {
+
+    h1,
+    h2 {
       font-weight: 400;
     }
-    
+
     h1 {
       margin-bottom: 1rem;
     }
-    
+
     h2 {
-      
-      .heart {
+      svg {
         @include size($headings-line-height/1.5 $headings-line-height/1.5);
         vertical-align: middle;
-        
-        * {
-          fill: #da3a35;
-        }
       }
     }
-    
+
     hr {
       border: 1px solid $primary-color;
     }
-    
+
     .social,
     .elsewhere {
       ul {
@@ -68,38 +66,13 @@
         @include margin(0 2rem);
         text-align: center;
       }
-      
+
       a {
         @include hide-text;
-      }
-      
-      svg {
-        @include size(2rem);
-        
-        * {
-          fill: $white;
+
+        svg {
+          @include size(2rem);
         }
-      }
-      
-      a:hover svg * {
-        fill: $black;
-      }
-      
-      .social-twitter a:hover svg * {
-        fill: $twitter-color;
-      }
-      
-      .social-facebook a:hover svg * {
-        fill: $facebook-color;
-      }
-      
-      .social-google-plus a:hover svg * {
-        fill: $google-plus-color;
-      }
-      
-      .social-instagram a:hover svg *,
-      .social-github a:hover svg * {
-        fill: $instagram-color;
       }
     }
   }
