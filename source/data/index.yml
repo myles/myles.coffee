@@ -6,18 +6,21 @@ elsewhere:
     slug: myles-blog
     title: "Myles' Blog"
     url: "http://mylesbraithwaite.com/"
+
   - 
     description: "A place for web experiments and programming notes."
     rel: me
     slug: myles-lab
     title: "Myles' Lab"
     url: "http://mylesbraithwaite.org/"
+
   - 
     description: "Some random posts from my life."
     rel: me
     slug: myles-life
     title: "Myles' Life"
     url: "http://www.myles.life/"
+
   - 
     description: "Some of my photography."
     disabled: true
@@ -25,12 +28,14 @@ elsewhere:
     slug: myles-photo
     title: Myles.Photo
     url: "http://myles.photo/"
+
   - 
     description: "Sometimes I make mixtapes for the Internet."
     rel: me
     slug: myles-red
     title: "Myles RED"
     url: "http://myles.red/"
+
   - 
     rel: me
     slug: the-worst
@@ -44,24 +49,28 @@ social:
     slug: email
     title: Email
     url: "mailto:me@myles.coffee"
+
   - 
     description: "Follow me on Twitter."
     rel: me
     slug: twitter
     title: Twitter
     url: "https://twitter.com/mylesb"
+
   - 
     description: "Follow me on GitHub."
     rel: me
     slug: github
     title: GitHub
     url: "https://github.com/myles"
+
   - 
     description: "Follow me on Instgram."
     rel: me
     slug: instagram
     title: Instagram
     url: "https://www.instagram.com/myles"
+
   - 
     description: "Like me on Facebook"
     rel: me

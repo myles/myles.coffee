@@ -1,6 +1,7 @@
 .body-index {
-  @include retina-image('../images/background', cover, 'jpg');
-  
+  @include retina-image($index-background-image, cover,
+                        $index-background-image-ext);
+
   background-attachment: fixed;
   background-color: $primary-color;
   background-position: center center;
@@ -13,7 +14,8 @@
   height: 100vh;
 
   .main {
-    @include background(radial-gradient(lighten($primary-color, 10%), $primary-color));
+    @include background(radial-gradient(lighten($index-background-color, 10%),
+                                        $index-background-color));
     @include span-columns(12);
   }
 
@@ -44,6 +46,8 @@
   }
 
   h2 {
+    line-height: $headings-line-height/1.5;
+
     svg {
       @include size($headings-line-height/1.5 $headings-line-height/1.5);
       vertical-align: middle;
@@ -70,14 +74,14 @@
       @include size(2rem);
     }
   }
-  
+
   @include media($desktop) {
     .main {
       @include span-columns(5);
-      
+
       @include display(flex);
       @include align-items(center);
-      
+
       height: 100vh;
     }
 

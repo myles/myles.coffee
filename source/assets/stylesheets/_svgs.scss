@@ -1,95 +1,107 @@
 .svg-icon {
   * {
-    fill: $white;
+    fill: $svg-icon-color;
   }
 
   &:hover {
     * {
-      fill: $black;
+      fill: $svg-icon-color-hover;
     }
   }
 }
 
 .svg-icon-heart {
   * {
-    fill: $heart-color;
+    fill: $svg-icon-heart;
   }
 
   &:hover {
     * {
-      fill: $heart-color;
+      fill: $svg-icon-heart-hover;
     }
   }
 }
 
 .svg-icon-coffee {
   * {
-    fill: $white;
+    fill: $svg-icon-coffee;
   }
 
   &:hover {
     * {
-      fill: $starbucks-color;
+      fill: $svg-icon-coffee-hover;
     }
   }
 }
 
 .svg-icon-email {
   * {
-    fill: $white;
+    fill: $svg-icon-color;
+  }
+  
+  &:hover {
+    * {
+      fill: $svg-icon-color-hover;
+    }
   }
 }
 
 .svg-icon-twitter {
   * {
-    fill: $white;
+    fill: $svg-icon-twitter;
   }
 
   &:hover {
     * {
-      fill: $twitter-color;
+      fill: $svg-icon-twitter-hover;
     }
   }
 }
 
 .svg-icon-facebook {
   * {
-    fill: $white;
+    fill: $svg-icon-facebook;
   }
 
   &:hover {
     * {
-      fill: $facebook-color;
+      fill: $svg-icon-facebook-hover;
     }
   }
 }
 
 .svg-icon-google-plus {
   * {
-    fill: $white;
+    fill: $svg-icon-google-plus;
   }
 
   &:hover {
     * {
-      fill: $google-plus-color;
+      fill: $svg-icon-google-plus-hover;
     }
   }
 }
 
 .svg-icon-instagram {
   * {
-    fill: $white;
+    fill: $svg-icon-instagram;
   }
 
   &:hover {
     * {
-      fill: $instagram-color;
+      fill: $svg-icon-instagram-hover;
     }
   }
 }
 
 .svg-icon-github {
   * {
-    fill: $white;
+    fill: $svg-icon-github;
+  }
+  
+  &:hover {
+    * {
+      fill: $svg-icon-color-hover;
+    }
   }
 }

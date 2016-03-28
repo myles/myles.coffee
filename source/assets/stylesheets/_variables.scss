@@ -1,6 +1,45 @@
 $primary-color: $wild-watermelon;
+$primary-color-complement: complement($primary-color);
 
-$starbucks-color: #00592d;
-$heart-color: #da3a35;
-
+// Media Breakpoints
+// -----------------
 $desktop: new-breakpoint(min-width 800px, 12);
+
+// Pages
+// -----
+
+// Index
+$index-background-image: '../images/background';
+$index-background-image-ext: 'jpg';
+
+$index-background-color: $primary-color;
+
+// SVG Icons
+// ---------
+$svg-icon-color: $white;
+$svg-icon-color-hover: $black;
+
+$svg-icon-heart: #da3a35;
+$svg-icon-heart-hover: $svg-icon-heart;
+
+$svg-icon-coffee: $svg-icon-color;
+$svg-icon-coffee-hover: $primary-color-complement;
+
+$svg-icon-email: $svg-icon-color;
+$svg-icon-email-hover: $svg-icon-color-hover;
+
+$svg-icon-twitter: $svg-icon-color;
+$svg-icon-twitter-hover: $twitter-color;
+
+$svg-icon-facebook: $svg-icon-color;
+$svg-icon-facebook-hover: $facebook-color;
+
+$svg-icon-google-plus: $svg-icon-color;
+$svg-icon-google-plus-hover: $google-plus-color;
+
+$svg-icon-instagram: $svg-icon-color;
+$svg-icon-instagram-hover: $instagram-color;
+
+$svg-icon-github: $svg-icon-color;
+$svg-icon-github-hover: $svg-icon-color-hover;
+
