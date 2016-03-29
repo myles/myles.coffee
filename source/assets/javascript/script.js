@@ -1,5 +1,5 @@
-/*jslint browser: true */
-/*global  $,ga */
+/* jslint browser: true */
+/* global  $,ga */
 
 function trackOutboundLinkClicks(link) {
     'use strict';

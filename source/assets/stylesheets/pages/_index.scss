@@ -46,7 +46,7 @@
   }
 
   h2 {
-    line-height: $headings-line-height/1.5;
+    line-height: $headings-line-height / 1.5;
 
     svg {
       @include size($headings-line-height/1.5 $headings-line-height/1.5);

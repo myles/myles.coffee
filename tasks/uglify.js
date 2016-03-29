@@ -12,7 +12,7 @@ module.exports = function (grunt) {
     config = {
         options: {
             banner: '/*! <%= pkg.name %> - v<%= pkg.version %> - ' +
-                    '<%= grunt.template.today("yyyy-mm-dd") %> */'
+                    '<%= grunt.template.today("yyyy-mm-dd") %> */\n'
         },
         develop: {
             options: {

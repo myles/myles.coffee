@@ -10,13 +10,23 @@ module.exports = function (grunt) {
         'watch'
     ]);
 
-    grunt.registerTask('staging', [
-        'clean:build',
+    grunt.registerTask('build', [
         'assemble:production',
         'uglify:production',
         'sass:production',
         'copy:assets',
+    ]);
+
+    grunt.registerTask('staging', [
+        'clean:build',
+        'build',
         'rsync:staging'
+    ]);
+
+    grunt.registerTask('production', [
+        'clean:build',
+        'build',
+        'rsync:production'
     ]);
 
     grunt.registerTask('test', [
