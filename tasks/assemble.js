@@ -24,7 +24,8 @@ module.exports = function (grunt) {
             helpers: '<%= config.source %>/helpers/helpers-*.js',
             layoutdir: '<%= config.source %>/templates/layouts',
             partials: [
-                '<%= config.source %>/templates/partials/*.hbs'
+                '<%= config.source %>/templates/partials/*.hbs',
+                '<%= config.source %>/templates/icons/*.svg'
             ],
             layout: 'base.hbs',
             permalinks: {
@@ -39,15 +40,15 @@ module.exports = function (grunt) {
         },
         develop: {
             options: {
-                dev: true,
-                prod: false
+                develop: true,
+                production: false
             },
             files: files
         },
         production: {
             options: {
-                dev: false,
-                prod: true
+                develop: false,
+                production: true
             },
             files: files
         }
