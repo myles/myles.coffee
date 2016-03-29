@@ -10,6 +10,15 @@ module.exports = function (grunt) {
         'watch'
     ]);
 
+    grunt.registerTask('staging', [
+        'clean:build',
+        'assemble:production',
+        'uglify:production',
+        'sass:production',
+        'copy:assets',
+        'rsync:staging'
+    ]);
+
     grunt.registerTask('test', [
         'sasslint'
     ]);

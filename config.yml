@@ -14,3 +14,11 @@ source: ./source
 destination: ./build
 
 google-analytics: 'UA-1642439-35'
+
+staging:
+  dest: /srv/www/myles.coffee/draft/html/
+  host: myles@bear.mylesbraithwaite.com
+
+production:
+  dest: /srv/www/myles.coffee/www/html/
+  host: myles@bear.mylesbraithwaite.com

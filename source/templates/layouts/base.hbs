@@ -31,7 +31,8 @@
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','{{config.google-analytics}}','auto');
             ga('send','pageview');
-            ga('send', 'event', 'Date', 'last_update', '{{now "%Y-%m-%d_%H-%M-%S"}}', nonInteraction: true);
+            ga('send','event',{eventCategory:'Date',eventAction:'last_update',
+            eventLabel:'{{now "%Y-%m-%d_%H-%M-%S"}}',nonInteraction:true});
         </script>
         {{/if}}
 
