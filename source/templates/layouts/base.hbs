@@ -12,6 +12,10 @@
 
         <link rel="stylesheet" href="/assets/stylesheets/style.css">
         <script src="/assets/javascript/libs/modernizr-2.8.3.min.js"></script>
+
+        {{> schema}}
+        {{> twitter-card}}
+        {{> favicons}}
     </head>
     <body class="body-{{basename}}">
         <!--[if lt IE 8]>
@@ -35,8 +39,6 @@
             eventLabel:'{{now "%Y-%m-%d_%H-%M-%S"}}',nonInteraction:true});
         </script>
         {{/if}}
-
-        {{> schema}}
 
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="/assets/javascript/libs/jquery-1.12.0.min.js"><\/script>')</script>
