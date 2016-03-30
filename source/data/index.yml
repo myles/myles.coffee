@@ -5,21 +5,23 @@ elsewhere:
     rel: me
     slug: myles-blog
     title: "Myles' Blog"
-    url: "http://mylesbraithwaite.com/"
+    url: "https://mylesbraithwaite.com/"
 
   - 
     description: "A place for web experiments and programming notes."
     rel: me
     slug: myles-lab
     title: "Myles' Lab"
-    url: "http://mylesbraithwaite.org/"
+    url: "https://mylesbraithwaite.org/"
+    icon: true
 
   - 
     description: "Some random posts from my life."
     rel: me
     slug: myles-life
     title: "Myles' Life"
-    url: "http://www.myles.life/"
+    url: "https://www.myles.life/"
+    icon: true
 
   - 
     description: "Some of my photography."
@@ -27,20 +29,20 @@ elsewhere:
     rel: me
     slug: myles-photo
     title: Myles.Photo
-    url: "http://myles.photo/"
+    url: "https://myles.photo/"
 
   - 
     description: "Sometimes I make mixtapes for the Internet."
     rel: me
     slug: myles-red
     title: "Myles RED"
-    url: "http://myles.red/"
+    url: "https://myles.red/"
 
   - 
     rel: me
     slug: the-worst
     title: "You are the Worst Today"
-    url: "http://youaretheworst.today/"
+    url: "https://youaretheworst.today/"
 
 social: 
   - 

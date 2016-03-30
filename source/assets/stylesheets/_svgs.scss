@@ -101,7 +101,56 @@
 
   &:hover {
     * {
-      fill: $svg-icon-color-hover;
+      fill: $svg-icon-github-hover;
+    }
+  }
+}
+
+.svg-icon-myles-lab {
+  * {
+    fill: $svg-icon-myles-lab;
+  }
+
+  &:hover {
+    .svg-icon-myles-lab-liqud {
+      fill: $svg-icon-myles-lab-hover-liquid;
+    }
+
+    .svg-icon-myles-lab-beaker {
+      fill: $svg-icon-myles-lab-hover-beaker;
+    }
+  }
+}
+
+.svg-icon-myles-life {
+  * {
+    fill: $svg-icon-myles-lab;
+  }
+  
+  .svg-icon-myles-life-bg {
+    fill: transparent;
+  }
+
+  &:hover {
+    .svg-icon-myles-life-bg {
+      fill: #fff6eb;
+    }
+
+    .svg-icon-myles-life-border {
+      fill: #000;
+    }
+
+    .svg-icon-myles-life-arrow {
+      fill: #ff5173;
+      fill-rule: nonzero;
+    }
+
+    .svg-icon-myles-life-spinner {
+      fill: #000;
+    }
+
+    .svg-icon-myles-life-direction {
+      fill: #55595c;
     }
   }
 }
