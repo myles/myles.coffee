@@ -20,7 +20,7 @@ elsewhere:
     rel: me
     slug: myles-life
     title: "Myles' Life"
-    url: "https://www.myles.life/"
+    url: "https://myles.life/"
     icon: true
 
   - 
@@ -53,28 +53,28 @@ social:
     url: "mailto:me@myles.coffee"
 
   - 
-    description: "Follow me on Twitter."
+    description: "You should follow me on Twitter."
     rel: me
     slug: twitter
     title: Twitter
     url: "https://twitter.com/mylesb"
 
   - 
-    description: "Follow me on GitHub."
+    description: "You should follow me on GitHub."
     rel: me
     slug: github
     title: GitHub
     url: "https://github.com/myles"
 
   - 
-    description: "Follow me on Instgram."
+    description: "You should follow my mobile photography on Instgram."
     rel: me
     slug: instagram
     title: Instagram
     url: "https://www.instagram.com/myles"
 
   - 
-    description: "Like me on Facebook"
+    description: "You should follow me on Facebook"
     rel: me
     slug: facebook
     title: Facebook

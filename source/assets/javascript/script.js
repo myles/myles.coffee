@@ -26,4 +26,6 @@ $(document).ready(function () {
         // Track the Event
         trackOutboundLinkClicks($(this));
     });
+
+    $('.social li a').tooltipster();
 });

@@ -8,14 +8,13 @@
         <meta name="keywords" content="{{#each config.site_keywords}}{{#unless @first}}, {{/unless}}{{this}}{{/each}}">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-
         <link rel="stylesheet" href="/assets/stylesheets/style.css">
         <script src="/assets/javascript/libs/modernizr-2.8.3.min.js"></script>
 
-        {{> schema}}
-        {{> twitter-card}}
-        {{> favicons}}
+        <link rel="canonical" href="{{config.url}}{{canonical page.dest}}">
+        <link rel="onion" href="https://kqfrcfjyom54yuks.onion{{canonical page.dest}}">
+
+        {{> schema}}{{> twitter-card}}{{> favicons}}{{> open-graph}}
     </head>
     <body class="body-{{basename}}">
         <!--[if lt IE 8]>

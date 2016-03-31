@@ -1,3 +1,4 @@
+
 <div class="main">
     <div class="main-wrapper">
         <div class="logo">
@@ -30,7 +31,7 @@
             <ul>
             {{#each index.elsewhere}}
                 <li class="elsewhere-{{slug}}">
-                    <a href="{{url}}" title="{{description}}"{{#if rel}} rel="{{rel}}"{{/if}}>
+                    <a href="{{url}}" title="{{title}} - {{description}}"{{#if rel}} rel="{{rel}}"{{/if}}>
                         {{#if icon}}{{> (lookup . 'slug') }}{{/if}}
                         {{title}}
                     </a>
