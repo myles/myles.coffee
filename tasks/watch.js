@@ -21,6 +21,7 @@ module.exports = function (grunt) {
             tasks: 'assemble:develop',
             files: [
                 '<%= config.source %>/**/*.hbs',
+                '<%= config.source %>/**/*.svg',
                 '<%= config.source %>/**/*.yml'
             ]
         }

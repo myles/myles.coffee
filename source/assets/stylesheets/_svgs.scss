@@ -106,12 +106,12 @@
   }
 }
 
-.svg-icon-myles-lab {
-  * {
+.elsewhere-myles-lab {
+  svg * {
     fill: $svg-icon-myles-lab;
   }
-
-  &:hover {
+  
+  a:hover {
     .svg-icon-myles-lab-liqud {
       fill: $svg-icon-myles-lab-hover-liquid;
     }
@@ -122,16 +122,30 @@
   }
 }
 
-.svg-icon-myles-life {
-  * {
-    fill: $svg-icon-myles-life;
+.elsewhere-myles-red {
+  svg {
+    * {
+      fill: $svg-icon-myles-red;
+    }
   }
   
-  .svg-icon-myles-life-bg {
-    fill: transparent;
+  a:hover {
+    fill: $svg-icon-myles-red-hover;
   }
+}
 
-  &:hover {
+.elsewhere-myles-life {
+  svg {
+    * {
+      fill: $svg-icon-myles-life;
+    }
+    
+    .svg-icon-myles-life-bg {
+      fill: transparent;
+    }
+  }
+  
+  a:hover {
     .svg-icon-myles-life-bg {
       fill: #fff6eb;
     }

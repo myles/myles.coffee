@@ -37,12 +37,14 @@ elsewhere:
     slug: myles-red
     title: "Myles RED"
     url: "https://myles.red/"
+    icon: true
 
   - 
     rel: me
     slug: the-worst
     title: "You are the Worst Today"
     url: "https://youaretheworst.today/"
+    icon: true
 
 social: 
   - 
