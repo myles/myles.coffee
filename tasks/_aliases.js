@@ -11,6 +11,7 @@ module.exports = function (grunt) {
     ]);
 
     grunt.registerTask('build', [
+        'favicons',
         'assemble:production',
         'uglify:production',
         'sass:production',
