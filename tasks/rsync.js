@@ -17,8 +17,8 @@ module.exports = function (grunt) {
         },
         production: {
             options: {
-                dest: '<%= config.staging.dest %>',
-                host: '<%= config.staging.host %>'
+                dest: '<%= config.production.dest %>',
+                host: '<%= config.production.host %>'
             }
         }
     };

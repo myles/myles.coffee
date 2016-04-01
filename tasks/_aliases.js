@@ -14,16 +14,16 @@ module.exports = function (grunt) {
         'assemble:production',
         'uglify:production',
         'sass:production',
-        'copy:assets',
+        'copy:assets'
     ]);
 
-    grunt.registerTask('staging', [
+    grunt.registerTask('deploy', [
         'clean:build',
         'build',
         'rsync:staging'
     ]);
 
-    grunt.registerTask('production', [
+    grunt.registerTask('deploy:production', [
         'clean:build',
         'build',
         'rsync:production'

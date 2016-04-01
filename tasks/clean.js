@@ -4,7 +4,9 @@ module.exports = function (grunt) {
     var config = {
         build: [
             '<%= config.destination %>/**/*',
-            '!<%= config.destination %>/.keep'
+            '!<%= config.destination %>/.keep',
+            '!<%= config.destination %>/*.png',
+            '!<%= config.destination %>/*.ico'
         ]
     };
 
