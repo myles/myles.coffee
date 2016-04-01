@@ -9,7 +9,7 @@ module.exports = function (grunt) {
                 livereload: true
             }
         }
-    }
+    };
 
     grunt.config.set('connect', config);
 };

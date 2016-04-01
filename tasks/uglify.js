@@ -7,7 +7,7 @@ module.exports = function (grunt) {
         '<%= config.destination %>/assets/javascript/script.js': [
             '<%= config.source %>/assets/javascript/script.js'
         ]
-    }
+    };
 
     config = {
         options: {
@@ -28,7 +28,7 @@ module.exports = function (grunt) {
             },
             files: files
         }
-    }
+    };
 
     grunt.config.set('uglify', config);
 };
