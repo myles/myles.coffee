@@ -5,6 +5,9 @@ module.exports = function (grunt) {
         build: [
             '<%= config.destination %>/**/*',
             '!<%= config.destination %>/.keep'
+        ],
+        staging: [
+            '<%= config_local.local_staging_dir %>/**/*'
         ]
     };
 

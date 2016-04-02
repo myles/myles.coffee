@@ -3,7 +3,8 @@ module.exports = function (grunt) {
 
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
-        config: grunt.file.readYAML('config.yml')
+        config: grunt.file.readYAML('config.yml'),
+        config_local: grunt.file.readYAML('config.local.yml')
     });
 
     grunt.loadNpmTasks('grunt-sass');
