@@ -1,6 +1,5 @@
 .body-index {
-  @include retina-image($index-background-image, cover,
-                        $index-background-image-ext);
+  @include retina-image($index-background-image, cover, $index-background-image-ext);
 
   background-attachment: fixed;
   background-color: $primary-color;
@@ -15,8 +14,7 @@
   height: 100vh;
 
   .main {
-    @include background(radial-gradient(lighten($index-background-color, 10%),
-                                        $index-background-color));
+    @include background(radial-gradient(lighten($index-background-color, 10%), $index-background-color));
     @include span-columns(12);
   }
 

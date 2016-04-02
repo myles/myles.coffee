@@ -107,11 +107,13 @@
 }
 
 .elsewhere-myles-lab {
-  svg * {
-    fill: $svg-icon-myles-lab;
+  svg {
+    * {
+      fill: $svg-icon-myles-lab;
+    }
   }
-  
-  a:hover {
+
+  &:hover {
     .svg-icon-myles-lab-liqud {
       fill: $svg-icon-myles-lab-hover-liquid;
     }
@@ -128,8 +130,8 @@
       fill: $svg-icon-myles-red;
     }
   }
-  
-  a:hover {
+
+  &:hover {
     fill: $svg-icon-myles-red-hover;
   }
 }
@@ -139,32 +141,32 @@
     * {
       fill: $svg-icon-myles-life;
     }
-    
+
     .svg-icon-myles-life-bg {
       fill: transparent;
     }
   }
-  
-  a:hover {
+
+  &:hover {
     .svg-icon-myles-life-bg {
-      fill: #fff6eb;
+      fill: $svg-icon-myles-life-bg;
     }
 
     .svg-icon-myles-life-border {
-      fill: #000;
+      fill: $svg-icon-myles-life-border;
     }
 
     .svg-icon-myles-life-arrow {
-      fill: #ff5173;
+      fill: $svg-icon-myles-life-arrow;
       fill-rule: nonzero;
     }
 
     .svg-icon-myles-life-spinner {
-      fill: #000;
+      fill: $svg-icon-myles-life-spinner;
     }
 
     .svg-icon-myles-life-direction {
-      fill: #55595c;
+      fill: $svg-icon-myles-life-direction;
     }
   }
 }
