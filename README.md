@@ -1,6 +1,4 @@
-# myles.coffee
-
-[![Build Status](https://travis-ci.org/myles/myles.coffee.svg?branch=master)](https://travis-ci.org/myles/myles.coffee) [![devDependency Status](https://david-dm.org/myles/myles.coffee/dev-status.svg)](https://david-dm.org/myles/myles.coffee#info=devDependencies)
+# myles.coffee [![Build Status](https://travis-ci.org/myles/myles.coffee.svg?branch=master)](https://travis-ci.org/myles/myles.coffee) [![devDependency Status](https://david-dm.org/myles/myles.coffee/dev-status.svg)](https://david-dm.org/myles/myles.coffee#info=devDependencies)
 
 The source code for one of [my personal websites](https://myles.coffee "Myles.Coffee").
 
