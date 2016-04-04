@@ -38,3 +38,9 @@ $ grunt test
 ```
 
 ## Deploy
+
+Deploy the web sites to the server with:
+
+```
+$ grunt deploy
+```
