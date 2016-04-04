@@ -21,7 +21,7 @@ module.exports = function (grunt) {
             },
             files: files
         },
-        production: {
+        build: {
             options: {
                 sourceMap: false,
                 beautify: false

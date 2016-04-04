@@ -8,6 +8,7 @@ module.exports = function (grunt) {
 
     grunt.loadNpmTasks('grunt-sass');
     grunt.loadNpmTasks('grunt-rsync');
+    grunt.loadNpmTasks('grunt-header');
     grunt.loadNpmTasks('grunt-assemble');
     grunt.loadNpmTasks('grunt-favicons');
     grunt.loadNpmTasks('grunt-sass-lint');

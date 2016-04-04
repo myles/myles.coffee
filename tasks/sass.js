@@ -26,8 +26,12 @@ module.exports = function (grunt) {
         develop: {
             files: files
         },
-        production: {
-            files: files
+        build: {
+            files: files,
+            options: {
+                sourceMap: false,
+                outputStyle: 'compressed'
+            }
         }
     };
 

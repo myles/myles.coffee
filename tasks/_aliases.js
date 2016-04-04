@@ -11,21 +11,21 @@ module.exports = function (grunt) {
     ]);
 
     grunt.registerTask('build', [
+        'clean:build',
         'favicons',
-        'assemble:production',
-        'uglify:production',
-        'sass:production',
+        'assemble:build',
+        'uglify:build',
+        'sass:build',
+        'header:stylesheet',
         'copy:assets'
     ]);
 
     grunt.registerTask('deploy', [
-        'clean:build',
         'build',
         'rsync:staging'
     ]);
 
     grunt.registerTask('deploy:production', [
-        'clean:build',
         'build',
         'rsync:production'
     ]);

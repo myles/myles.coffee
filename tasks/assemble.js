@@ -45,7 +45,7 @@ module.exports = function (grunt) {
             },
             files: files
         },
-        production: {
+        build: {
             options: {
                 develop: false,
                 production: true

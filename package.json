@@ -26,6 +26,7 @@
     "grunt-contrib-uglify": "^1.0.1",
     "grunt-contrib-watch": "^1.0.0",
     "grunt-favicons": "^0.7.0",
+    "grunt-header": "^1.0.1",
     "grunt-rsync": "^1.0.1",
     "grunt-sass": "^1.1.0",
     "grunt-sass-lint": "^0.1.0"
