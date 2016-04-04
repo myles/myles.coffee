@@ -14,6 +14,7 @@ module.exports = function (grunt) {
         'clean:build',
         'favicons',
         'assemble:build',
+        'htmlmin:build',
         'uglify:build',
         'sass:build',
         'header:stylesheet',
