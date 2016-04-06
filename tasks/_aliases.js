@@ -32,6 +32,11 @@ module.exports = function (grunt) {
         'rsync:production'
     ]);
 
+    grunt.registerTask('distribute', [
+        'build',
+        'compress:distribute'
+    ]);
+
     grunt.registerTask('test', [
         'sasslint'
     ]);

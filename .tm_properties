@@ -1,2 +1,2 @@
 include = "{$include,.travis.yml}"
-exclude = "{$exclude,build,node_modules,bower_components}"
+exclude = "{$exclude,build,node_modules,bower_components,dist}"

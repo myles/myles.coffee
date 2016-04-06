@@ -12,6 +12,7 @@ baseurl: /
 
 source: ./source
 destination: ./build
+distribute: ./dist
 
 google-analytics: 'UA-1642439-35'
 
