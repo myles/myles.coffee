@@ -12,8 +12,11 @@ module.exports = function (grunt) {
             tileColor: '#ff5173',
             firefox: true,
             androidHomescreen: true,
-            indent: '',
-            /* html: '<%= config.source %>/templates/partials/favicons.hbs' */
+            androidIcons: true,
+            indent: '        ',
+            HTMLPrefix: '/',
+            truncateHTML: true,
+            html: '<%= config.source %>/templates/partials/favicons.hbs'
         },
         icons: {
             src: '<%= config.source %>/assets/images/coffee.png',

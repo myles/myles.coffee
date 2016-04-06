@@ -2,6 +2,7 @@ module.exports = function (grunt) {
     'use strict';
 
     grunt.registerTask('develop', [
+        'favicons',
         'assemble:develop',
         'uglify:develop',
         'sass:develop',
