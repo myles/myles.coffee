@@ -1,10 +1,10 @@
 # myles.coffee [![Build Status](https://travis-ci.org/myles/myles.coffee.svg?branch=master)](https://travis-ci.org/myles/myles.coffee) [![devDependency Status](https://david-dm.org/myles/myles.coffee/dev-status.svg)](https://david-dm.org/myles/myles.coffee#info=devDependencies)
 
+![Screenshot of Myles.Coffee](/designs/screenshot.png?raw=true "Screenshot of Myles.Coffee")
+
 The source code for one of [my personal websites](https://myles.coffee "Myles.Coffee").
 
-## Development
-
-### Requirements
+## Requirements
 
 * Node.js
 * Bower
@@ -23,7 +23,7 @@ $ npm install
 $ bower install
 ```
 
-### Usage
+## Usage
 
 Run the development server:
 
@@ -37,10 +37,13 @@ Run a lint validator on the stylesheets and JavaScript files (also used for Trav
 $ grunt test
 ```
 
-## Deploy
-
 Deploy the web sites to the server with:
 
 ```
 $ grunt deploy
 ```
+
+## Hidden Service
+
+You can access the web site though Tor though the address [kqfrcfjyom54yuks.onion](http://kqfrcfjyom54yuks.onion).
+
