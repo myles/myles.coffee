@@ -5,14 +5,16 @@ module.exports = function (grunt) {
         distribute: {
             options: {
                 mode: 'tgz',
-                archive: '<%= config.distribute %>/myles-coffee-' +
-                         grunt.template.today("yyyy-mm-dd-HH-MM-ss") +
+                archive: '<%= config.distribute %>/myles-coffee-v' +
+                         grunt.template.today("yyyy-mm-dd") +
                          '.tar.gz'
             },
             files: [{
                 expand: true,
                 cwd: '<%= config.destination %>',
-                src: ['**']
+                src: ['**'],
+                dest: 'myles.coffee-www-v' +
+                      grunt.template.today("yyyy-mm-dd")
             }]
         }
     };
