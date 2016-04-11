@@ -7,6 +7,7 @@ module.exports = function (grunt) {
         'uglify:develop',
         'sass:develop',
         'copy:assets',
+        'imagemin',
         'connect',
         'watch'
     ]);
@@ -19,7 +20,8 @@ module.exports = function (grunt) {
         'uglify:build',
         'sass:build',
         'header:stylesheet',
-        'copy:assets'
+        'copy:assets',
+        'imagemin'
     ]);
 
     grunt.registerTask('deploy', [

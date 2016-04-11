@@ -3,9 +3,12 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
+
         <title>{{config.site_title}}</title>
+
         <meta name="description" content="{{config.site_description}}">
         <meta name="keywords" content="{{#each config.site_keywords}}{{#unless @first}}, {{/unless}}{{this}}{{/each}}">
+
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="stylesheet" href="/assets/stylesheets/style.css">
@@ -14,7 +17,13 @@
         <link rel="canonical" href="{{config.url}}{{canonical page.dest}}">
         <link rel="onion" href="https://kqfrcfjyom54yuks.onion{{canonical page.dest}}">
 
-        {{> schema}}{{> twitter-card}}{{> favicons}}{{> open-graph}}
+        {{> schema}}
+
+        {{> twitter-card}}
+
+        {{> favicons}}
+
+        {{> open-graph}}
     </head>
     <body class="body-{{basename}}">
         <div class="page page-{{basename}}">
