@@ -3,6 +3,9 @@ module.exports = function (grunt) {
 
     var config = {
         options: {
+            html: '<%= config.source %>/templates/partials/favicons.hbs',
+            truncateHTML: true,
+            HTMLPrefix: '/',
             trueColor: true,
             precomposed: true,
             appleTouchBackgroundColor: '#ff5173',
@@ -13,10 +16,7 @@ module.exports = function (grunt) {
             firefox: true,
             androidHomescreen: true,
             androidIcons: true,
-            indent: '        ',
-            HTMLPrefix: '/',
-            truncateHTML: true,
-            html: '<%= config.source %>/templates/partials/favicons.hbs'
+            indent: '        '
         },
         icons: {
             src: '<%= config.source %>/assets/images/coffee.png',
