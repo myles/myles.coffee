@@ -6,9 +6,6 @@ module.exports = function (grunt) {
     files = {
         '<%= config.destination %>/assets/javascript/script.js': [
             '<%= config.source %>/assets/javascript/script.js'
-        ],
-        '<%= config.destination %>/assets/javascript/libraries.js': [
-            '<%= config.source %>/assets/javascript/libs/*.js'
         ]
     };
 
