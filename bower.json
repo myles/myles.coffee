@@ -7,8 +7,9 @@
   "license": "MIT",
   "homepage": "https://github.com/myles/myles.coffee",
   "moduleType": [],
-  "devDependencies": {
-    "old-fashioned": "git@github.com:myles/old-fashioned.git",
-    "modernizr": "^3.3.1"
+  "dependencies": {
+    "bourbon": "latest",
+    "neat": "latest",
+    "modernizr": "latest"
   }
 }

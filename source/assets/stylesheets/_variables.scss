@@ -1,3 +1,30 @@
+// Colours
+// -------
+$cape-code: rgb(63, 80, 76);
+$wild-watermelon: rgb(255, 81, 115);
+$fire-bush: rgb(237, 160, 52);
+$bitter-lemon: rgb(198, 225, 0);
+$cerulean: rgb(36, 165, 212);
+
+// Neutral Colours
+$gray: #55595c;
+$white: #fff;
+$black: #000;
+
+// Gary Colours
+$gray-dark: darken($gray, 20);
+$gray-light: lighten($gray, 20);
+$gray-lighter: lighten($gray, 40);
+$gray-lightest: lighten($gray, 60);
+
+// Social Brand Colours
+$twitter-color: #00b4f3;
+$facebook-color: #3c569a;
+$google-plus-color: #df4a32;
+$instagram-color: #211f20;
+$rss-color: #f16522;
+
+// Primary Colours
 $primary-color: $wild-watermelon;
 $primary-color-complement: complement($primary-color);
 
