@@ -14,7 +14,7 @@ module.exports = function (grunt) {
     }];
 
     load_path = [
-        './bower_components/',
+        './node_modules/',
         '<%= config.source %>/assets/stylesheets'
     ];
 
